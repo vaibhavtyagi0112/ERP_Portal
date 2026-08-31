@@ -21,6 +21,7 @@ if (!MONGO_URI) {
     process.exit(1);
   }
 
+{/* MOngoose Connect */}
 mongoose.connect(MONGO_URI, {})
 .then(()=>console.log("MongoDB Connected"))
 .catch((err)=>console.log(err));
